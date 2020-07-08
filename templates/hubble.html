@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='hubble2.jpeg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">Hubble Space Telescope</h2>
+
+          <p>The Hubble Space Telescope (often referred to as HST or Hubble) is a space telescope that was launched into low Earth orbit in 1990 and remains in operation. It was not the first space telescope but it is one of the largest and most versatile, well known both as a vital research tool and as a public relations boon for astronomy. The Hubble telescope is named after astronomer Edwin Hubble and is one of NASA's Great Observatories, along with the Compton Gamma Ray Observatory, the Chandra X-ray Observatory, and the Spitzer Space Telescope.</p>
+
+<p>Hubble features a 2.4-meter (7.9 ft) mirror, and its four main instruments observe in the ultraviolet, visible, and near infrared regions of the electromagnetic spectrum. Hubble's orbit outside the distortion of Earth's atmosphere allows it to capture extremely high-resolution images with substantially lower background light than ground-based telescopes. It has recorded some of the most detailed visible light images, allowing a deep view into space. Many Hubble observations have led to breakthroughs in astrophysics, such as determining the rate of expansion of the universe.</p>
+<p>The Hubble telescope was built by the United States space agency NASA with contributions from the European Space Agency. The Space Telescope Science Institute (STScI) selects Hubble's targets and processes the resulting data, while the Goddard Space Flight Center controls the spacecraft. Space telescopes were proposed as early as 1923. Hubble was funded in the 1970s with a proposed launch in 1983, but the project was beset by technical delays, budget problems, and the 1986 Challenger disaster. It was finally launched by Space Shuttle Discovery in 1990, but its main mirror had been ground incorrectly, resulting in spherical aberration that compromised the telescope's capabilities. The optics were corrected to their intended quality by a servicing mission in 1993.</p>
+
+<p>Hubble is the only telescope designed to be maintained in space by astronauts. Five Space Shuttle missions have repaired, upgraded, and replaced systems on the telescope, including all five of the main instruments. The fifth mission was canceled on safety grounds following the Columbia disaster (2003), but NASA administrator Michael D. Griffin approved the fifth servicing mission which was completed in 2009. The telescope was still operating as of April 24, 2020, its 30th anniversary,[1] and could last until 2030–2040. One successor to the Hubble telescope is the James Webb Space Telescope (JWST) which is scheduled to be launched in March 2021</p>
+
+          <h3 class="section-heading">Key Discovery</h3>
+          <p>Hubble has helped resolve some long-standing problems in astronomy, while also raising new questions. Some results have required new theories to explain them.</p> 
+
+          <h4 class="section-heading">Age of the Universe</h4>
+
+          <p>Among its primary mission targets was to measure distances to Cepheid variable stars more accurately than ever before, and thus constrain the value of the Hubble constant, the measure of the rate at which the universe is expanding, which is also related to its age. Before the launch of HST, estimates of the Hubble constant typically had errors of up to 50%, but Hubble measurements of Cepheid variables in the Virgo Cluster and other distant galaxy clusters provided a measured value with an accuracy of ±10%, which is consistent with other more accurate measurements made since Hubble's launch using other techniques. The estimated age is now about 13.7 billion years, but before the Hubble Telescope, scientists predicted an age ranging from 10 to 20 billion years.</p>
+
+          <h4 class="section-heading">Expansion of the Universe</h4>
+
+          <p>While Hubble helped to refine estimates of the age of the universe, it also cast doubt on theories about its future. Astronomers from the High-z Supernova Search Team and the Supernova Cosmology Project used ground-based telescopes and HST to observe distant supernovae and uncovered evidence that, far from decelerating under the influence of gravity, the expansion of the universe may in fact be accelerating. Three members of these two groups have subsequently been awarded Nobel Prizes for their discovery. The cause of this acceleration remains poorly understood;the most common cause attributed is dark energy.</p>
+
+          <h4 class="section-heading">Black Holes</h4>
+
+          <p>The high-resolution spectra and images provided by the HST have been especially well-suited to establishing the prevalence of black holes in the center of nearby galaxies. While it had been hypothesized in the early 1960s that black holes would be found at the centers of some galaxies, and astronomers in the 1980s identified a number of good black hole candidates, work conducted with Hubble shows that black holes are probably common to the centers of all galaxies. The Hubble programs further established that the masses of the nuclear black holes and properties of the galaxies are closely related. The legacy of the Hubble programs on black holes in galaxies is thus to demonstrate a deep connection between galaxies and their central black holes.</p>
+
+          <h4 class="section-heading">Extending visible wavelength images</h4>
+
+          <p>A unique window on the Universe enabled by Hubble are the Hubble Deep Field, Hubble Ultra-Deep Field, and Hubble Extreme Deep Field images, which used Hubble's unmatched sensitivity at visible wavelengths to create images of small patches of sky that are the deepest ever obtained at optical wavelengths. The images reveal galaxies billions of light years away, and have generated a wealth of scientific papers, providing a new window on the early Universe. The Wide Field Camera 3 improved the view of these fields in the infrared and ultraviolet, supporting the discovery of some of the most distant objects yet discovered, such as MACS0647-JD.</p>
+
+<p>The non-standard object SCP 06F6 was discovered by the Hubble Space Telescope in February 2006.</p>
+
+<p>On March 3, 2016, researchers using Hubble data announced the discovery of the farthest known galaxy to date: GN-z11. The Hubble observations occurred on February 11, 2015, and April 3, 2015, as part of the CANDELS/GOODS-North surveys.</p>
+
+          <h4 class="section-heading">Solar System Discovery</h4>
+
+          <p>HST has also been used to study objects in the outer reaches of the Solar System, including the dwarf planets Pluto[139] and Eris.</p>
+
+<p>The collision of Comet Shoemaker-Levy 9 with Jupiter in 1994 was fortuitously timed for astronomers, coming just a few months after Servicing Mission 1 had restored Hubble's optical performance. Hubble images of the planet were sharper than any taken since the passage of Voyager 2 in 1979, and were crucial in studying the dynamics of the collision of a comet with Jupiter, an event believed to occur once every few centuries.</p>
+
+<p>During June and July 2012, U.S. astronomers using Hubble discovered Styx, a tiny fifth moon orbiting Pluto.</p>
+
+<p>In March 2015, researchers announced that measurements of aurorae around Ganymede, one of Jupiter's moons, revealed that it has a subsurface ocean. Using Hubble to study the motion of its aurorae, the researchers determined that a large saltwater ocean was helping to suppress the interaction between Jupiter's magnetic field and that of Ganymede. The ocean is estimated to be 100 km (60 mi) deep, trapped beneath a 150 km (90 mi) ice crust.</p>
+
+<p>From June to August 2015, Hubble was used to search for a Kuiper belt object (KBO) target for the New Horizons Kuiper Belt Extended Mission (KEM) when similar searches with ground telescopes failed to find a suitable target. This resulted in the discovery of at least five new KBOs, including the eventual KEM target, 486958 Arrokoth, that New Horizons performed a close fly-by of on January 1, 2019.</p>
+
+          <h4 class="section-heading">Supernova Reappearance</h4>
+
+          <p>On December 11, 2015, Hubble captured an image of the first-ever predicted reappearance of a supernova, dubbed "Refsdal", which was calculated using different mass models of a galaxy cluster whose gravity is warping the supernova's light. The supernova was previously seen in November 2014 behind galaxy cluster MACS J1149.5+2223 as part of Hubble's Frontier Fields program. Astronomers spotted four separate images of the supernova in an arrangement known as an Einstein Cross. The light from the cluster has taken about five billion years to reach Earth, though the supernova exploded some 10 billion years ago. Based on early lens models, a fifth image was predicted to reappear by the end of 2015. The detection of Refsdal's reappearance in December 2015 served as a unique opportunity for astronomers to test their models of how mass, especially dark matter, is distributed within this galaxy cluster.</p>
+
+          <h4 class="section-heading">Mass and Size of Milkyway</h4>
+
+          <p>n March 2019, observations from Hubble and data from the European Space Agency's Gaia space observatory were combined to determine that the Milky Way Galaxy weighs approximately 1.5 trillion solar units and has a radius of 129,000 light years.</p>
+          
+          <span class="caption text-muted">Sources:Wikipedia</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

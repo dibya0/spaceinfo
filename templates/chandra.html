@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='chandra1.jpeg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">Chandra X-ray Observatory</h2>
+
+          <p>The Chandra X-ray Observatory (CXO), previously known as the Advanced X-ray Astrophysics Facility (AXAF), is a Flagship-class space telescope launched aboard the Space Shuttle Columbia during STS-93 by NASA on July 23, 1999. Chandra is sensitive to X-ray sources 100 times fainter than any previous X-ray telescope, enabled by the high angular resolution of its mirrors. Since the Earth's atmosphere absorbs the vast majority of X-rays, they are not detectable from Earth-based telescopes; therefore space-based telescopes are required to make these observations. Chandra is an Earth satellite in a 64-hour orbit, and its mission is ongoing as of 2020.</p>
+
+<p>Chandra is one of the Great Observatories, along with the Hubble Space Telescope, Compton Gamma Ray Observatory (1991-2000), and the Spitzer Space Telescope. The telescope is named after the Nobel Prize-winning Indian-American astrophysicist Subrahmanyan Chandrasekhar.Its mission is similar to that of ESA's XMM-Newton spacecraft, also launched in 1999 but the two telescopes have different design foci; Chandra has much higher angular resolution.
+</p>
+
+          <h3 class="section-heading">Discovery</h3>
+
+          <p>The data gathered by Chandra has greatly advanced the field of X-ray astronomy. Here are some examples of discoveries supported by observations from Chandra:</p>
+
+    <ul><li>The first light image, of supernova remnant Cassiopeia A, gave astronomers their first glimpse of the compact object at the center of the remnant, probably a neutron star or black hole. (Pavlov, et al., 2000)</li>
+    <li>In the Crab Nebula, another supernova remnant, Chandra showed a never-before-seen ring around the central pulsar and jets that had only been partially seen by earlier telescopes. (Weisskopf, et al., 2000)</li>
+    <li>The first X-ray emission was seen from the supermassive black hole, Sagittarius A*, at the center of the Milky Way. (Baganoff, et al., 2001)</li>
+    <li>Chandra found much more cool gas than expected spiraling into the center of the Andromeda Galaxy.</li>
+    <li>Pressure fronts were observed in detail for the first time in Abell 2142, where clusters of galaxies are merging.</li>
+   <li>The earliest images in X-rays of the shock wave of a supernova were taken of SN 1987A.</li>
+    <li>Chandra showed for the first time the shadow of a small galaxy as it is being cannibalized by a larger one, in an image of Perseus A.</li>
+    <li>A new type of black hole was discovered in galaxy M82, mid-mass objects purported to be the missing link between stellar-sized black holes and super massive black holes. (Griffiths, et al., 2000)</li>
+    <li>X-ray emission lines were associated for the first time with a gamma-ray burst, Beethoven Burst GRB 991216. (Piro, et al., 2000)</li>
+    <li>High school students, using Chandra data, discovered a neutron star in supernova remnant IC 443.</li>
+    <li>Observations by Chandra and BeppoSAX suggest that gamma-ray bursts occur in star-forming regions.</li>
+    <li>Chandra data suggested that RX J1856.5-3754 and 3C58, previously thought to be pulsars, might be even denser objects: quark stars. These results are still debated.</li>
+    <li>Sound waves from violent activity around a super massive black hole were observed in the Perseus Cluster (2003).</li>
+
+
+
+    <li>TWA 5B, a brown dwarf, was seen orbiting a binary system of Sun-like stars.</li>
+    <li>Nearly all stars on the main sequence are X-ray emitters. (Schmitt & Liefke, 2004)</li>
+    <li>The X-ray shadow of Titan was seen when it transitted the Crab Nebula.</li>
+    <li>X-ray emissions from materials falling from a protoplanetary disc into a star. (Kastner, et al., 2004)</li>
+    <li>Hubble constant measured to be 76.9 km/s/Mpc using Sunyaev-Zel'dovich effect.</li>
+    <li>2006 Chandra found strong evidence that dark matter exists by observing super cluster collision</li>
+    <li>2006 X-ray emitting loops, rings and filaments discovered around a super massive black hole within Messier 87 imply the presence of pressure waves, shock waves and sound waves. The evolution of Messier 87 may have been dramatically affected.</li>
+    <li>Observations of the Bullet cluster put limits on the cross-section of the self-interaction of dark matter.</li>
+    <li>"The Hand of God" photograph of PSR B1509-58.</li>
+    <li>Jupiter's x-rays coming from poles, not auroral ring.</li>
+    <li>A large halo of hot gas was found surrounding the Milky Way.</li>
+    <li>Extremely dense and luminous dwarf galaxy M60-UCD1 observed.</li>
+   <li>On January 5, 2015, NASA reported that CXO observed an X-ray flare 400 times brighter than usual, a record-breaker, from Sagittarius A*, a supermassive black hole in the center of the Milky Way galaxy. The unusual event may have been caused by the breaking apart of an asteroid falling into the black hole or by the entanglement of magnetic field lines within gas flowing into Sagittarius A*, according to astronomers.</li>
+    <li>In September 2016, it was announced that Chandra had detected X-ray emissions from Pluto, the first detection of X-rays from a Kuiper belt object. Chandra had made the observations in 2014 and 2015, supporting the New Horizons spacecraft for its July 2015 encounter.</li></ul>
+          
+          <span class="caption text-muted">Sources:Wikipedia</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='star2.jpeg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">Star Constellation</h2>
+
+          <p>A constellation is an area on the celestial sphere in which a group of visible stars forms a perceived outline or pattern, typically representing an animal, mythological person or creature, or an inanimate object.</p>
+
+<p>The origins of the earliest constellations likely go back to prehistory. People used them to relate stories of their beliefs, experiences, creation, or mythology. Different cultures and countries adopted their own constellations, some of which lasted into the early 20th century before today's constellations were internationally recognized. The recognition of constellations has changed significantly over time. Many have changed in size or shape. Some became popular, only to drop into obscurity. Others were limited to a single culture or nation.</p>
+
+<p>The 48 traditional Western constellations are Greek. They are given in Aratus' work Phenomena and Ptolemy's Almagest, though their origin probably predates these works by several centuries. Constellations in the far southern sky were added from the 15th century until the mid-18th century when European explorers began traveling to the Southern Hemisphere. Twelve ancient constellations belong to the zodiac (straddling the ecliptic, which the Sun, Moon, and planets all traverse). The origins of the zodiac remain historically uncertain; its astrological divisions became prominent c. 400 BC in Babylonian or Chaldean astronomy.</p>
+
+<p>In 1922, the International Astronomical Union (IAU) formally accepted the modern list of 88 constellations, and in 1928 adopted official constellation boundaries that together cover the entire celestial sphere.[3][4] Any given point in a celestial coordinate system lies in one of the modern constellations. Some astronomical naming systems include the constellation where a given celestial object is found to convey its approximate location in the sky. The Flamsteed designation of a star, for example, consists of a number and the genitive form of the constellation name. </p>
+
+          
+          <span class="caption text-muted">Sources:Wikipedia.</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

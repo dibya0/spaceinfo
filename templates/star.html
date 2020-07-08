@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='star.jpg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">Star</h2>
+
+          <p>A star is an astronomical object consisting of a luminous spheroid of plasma held together by its own gravity. The nearest star to Earth is the Sun. Many other stars are visible to the naked eye from Earth during the night, appearing as a multitude of fixed luminous points in the sky due to their immense distance from Earth. Historically, the most prominent stars were grouped into constellations and asterisms, the brightest of which gained proper names. Astronomers have assembled star catalogues that identify the known stars and provide standardized stellar designations. The observable Universe contains an estimated 1×1024 stars,but most are invisible to the naked eye from Earth, including all stars outside our galaxy, the Milky Way.</p>
+
+<p>For most of its active life, a star shines due to thermonuclear fusion of hydrogen into helium in its core, releasing energy that traverses the star's interior and then radiates into outer space. Almost all naturally occurring elements heavier than helium are created by stellar nucleosynthesis during the star's lifetime, and for some stars by supernova nucleosynthesis when it explodes. Near the end of its life, a star can also contain degenerate matter. Astronomers can determine the mass, age, metallicity (chemical composition), and many other properties of a star by observing its motion through space, its luminosity, and spectrum respectively. The total mass of a star is the main factor that determines its evolution and eventual fate. Other characteristics of a star, including diameter and temperature, change over its life, while the star's environment affects its rotation and movement. A plot of the temperature of many stars against their luminosities produces a plot known as a Hertzsprung–Russell diagram (H–R diagram). Plotting a particular star on that diagram allows the age and evolutionary state of that star to be determined.</p>
+
+<p>A star's life begins with the gravitational collapse of a gaseous nebula of material composed primarily of hydrogen, along with helium and trace amounts of heavier elements. When the stellar core is sufficiently dense, hydrogen becomes steadily converted into helium through nuclear fusion, releasing energy in the process. The remainder of the star's interior carries energy away from the core through a combination of radiative and convective heat transfer processes. The star's internal pressure prevents it from collapsing further under its own gravity. A star with mass greater than 0.4 times the Sun's will expand to become a red giant when the hydrogen fuel in its core is exhausted. In some cases, it will fuse heavier elements at the core or in shells around the core. As the star expands it throws a part of its mass, enriched with those heavier elements, into the interstellar environment, to be recycled later as new stars. Meanwhile, the core becomes a stellar remnant: a white dwarf, a neutron star, or, if it is sufficiently massive, a black hole.</p>
+
+<p>Binary and multi-star systems consist of two or more stars that are gravitationally bound and generally move around each other in stable orbits. When two such stars have a relatively close orbit, their gravitational interaction can have a significant impact on their evolution.[6] Stars can form part of a much larger gravitationally bound structure, such as a star cluster or a galaxy.
+</p>
+
+          
+          <span class="caption text-muted">Sources:Wikipedia.</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

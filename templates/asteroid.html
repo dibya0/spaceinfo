@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='asteroid1.jpg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br></br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">Asteroid</h2>
+
+          <p> Asteroids are minor planets, especially of the inner Solar System. Larger asteroids have also been called planetoids. These terms have historically been applied to any astronomical object orbiting the Sun that did not resolve into a disc in a telescope and was not observed to have characteristics of an active comet such as a tail. As minor planets in the outer Solar System were discovered that were found to have volatile-rich surfaces similar to comets, these came to be distinguished from the objects found in the main asteroid belt. In this article, the term "asteroid" refers to the minor planets of the inner Solar System, including those co-orbital with Jupiter.</p>
+
+<p>Millions of asteroids exist, many the shattered remnants of planetesimals, bodies within the young Sun's solar nebula that never grew large enough to become planets. The vast majority of known asteroids orbit within the main asteroid belt located between the orbits of Mars and Jupiter, or are co-orbital with Jupiter (the Jupiter trojans). However, other orbital families exist with significant populations, including the near-Earth objects. Individual asteroids are classified by their characteristic spectra, with the majority falling into three main groups: C-type, M-type, and S-type. These were named after and are generally identified with carbon-rich, metallic, and silicate (stony) compositions, respectively. The sizes of asteroids varies greatly; the largest, Ceres, is almost 1,000 km (600 mi) across and massive enough to qualify as a dwarf planet.</p>
+
+Asteroids are somewhat arbitrarily differentiated from comets and meteoroids. In the case of comets, the difference is one of composition: while asteroids are mainly composed of mineral and rock, comets are primarily composed of dust and ice. Furthermore, asteroids formed closer to the sun, preventing the development of cometary ice.The difference between asteroids and meteoroids is mainly one of size: meteoroids have a diameter of one meter or less, whereas asteroids have a diameter of greater than one meter. Finally, meteoroids can be composed of either cometary or asteroidal materials. </p>
+          <h3 class="section-heading">Discovery</h3>
+          <p>The first asteroid to be discovered, Ceres, was originally considered to be a new planet.This was followed by the discovery of other similar bodies, which, with the equipment of the time, appeared to be points of light, like stars, showing little or no planetary disc, though readily distinguishable from stars due to their apparent motions. This prompted the astronomer Sir William Herschel to propose the term "asteroid",[note 2] coined in Greek as ἀστεροειδής, or asteroeidēs, meaning 'star-like, star-shaped', and derived from the Ancient Greek ἀστήρ astēr 'star, planet'. In the early second half of the nineteenth century, the terms "asteroid" and "planet" (not always qualified as "minor") were still used interchangeably.</p>          
+          <span class="caption text-muted">sources:Wikipedia.</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

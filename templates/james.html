@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='james.jpg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">James Webb Space Telescope</h2>
+
+          <p>The James Webb Space Telescope (JWST or "Webb") is a space telescope that is planned to succeed the Hubble Space Telescope as NASA's flagship astrophysics mission. The JWST will provide improved infrared resolution and sensitivity over Hubble, and will enable a broad range of investigations across the fields of astronomy and cosmology, including observing some of the most distant events and objects in the universe, such as the formation of the first galaxies.</p>
+
+<p>The primary mirror of the JWST, the Optical Telescope Element, is composed of eighteen 1.32 metres (4 ft 4 in) hexagonal mirror segments made of gold-plated beryllium which combine to create a 6.5 metres (21 ft) diameter mirror that is considerably larger than the Hubble's 2.4 metres (7 ft 10 in) mirror. Unlike the Hubble, which observes in the near ultraviolet, visible, and near infrared (0.1 to 1 μm) spectra, the JWST will observe in a lower frequency range, from long-wavelength visible light through mid-infrared (0.6 to 28.3 μm), which will allow it to observe high redshift objects that are too old and too distant for the Hubble to observe.[8][9] The telescope must be kept very cold in order to observe in the infrared without interference, so it will be deployed in space near the Earth–Sun L2 Lagrangian point, and a large sunshield made of silicon-coated and aluminium-coated Kapton will keep its mirror and instruments below 50 K (−220 °C; −370 °F).</p>
+
+<p>The JWST is being developed by NASA — with significant contributions from the European Space Agency and the Canadian Space Agency — and is named for James E. Webb, who was the administrator of NASA from 1961 to 1968 and played an integral role in the Apollo program. Development began in 1996 for a launch that was initially planned for 2007 and a 500-million-dollar budget, but the project has had numerous delays and cost overruns, and underwent a major redesign in 2005. The JWST's construction was completed in late 2016, after which its extensive testing phase began. In March 2018, NASA further delayed the launch after the telescope's sunshield ripped during a practice deployment.[15] Launch was delayed again in June 2018 following recommendations from an independent review board. Work on integration and testing of the telescope was suspended in March 2020 due to the COVID-19 pandemic, adding further delays.</p>
+
+          <h3 class="section-heading">Features</h3>
+
+          <p>The JWST has an expected mass about half of Hubble Space Telescope's, but its primary mirror (a 6.5 meter diameter, 21.3-foot gold-coated beryllium reflector) will have a collecting area over six times as large (25.4 square metres (273 sq ft) (using 18 hexagon mirrors with 0.9 square metres (9.7 sq ft) obscuration for the secondary support struts) vs 4.0 square metres (43 sq ft) (using a 2.4 m diameter circular monolith mirror with a 33% central obscuration[20] and three mirror mount pads). The JWST is oriented toward near-infrared astronomy, but can also see orange and red visible light, as well as the mid-infrared region, depending on the instrument. The design emphasizes the near to mid-infrared for three main reasons: High-redshift objects have their visible emissions shifted into the infrared, cold objects such as debris disks and planets emit most strongly in the infrared, and this band is difficult to study from the ground or by existing space telescopes such as Hubble. Ground-based telescopes must look through the atmosphere, which is opaque in many infrared bands (see figure of atmospheric transmission). Even where the atmosphere is transparent, many of the target chemical compounds, such as water, carbon dioxide, and methane, also exist in the Earth's atmosphere, vastly complicating analysis. Existing space telescopes such as Hubble cannot study these bands since their mirrors are not cool enough (the Hubble mirror is maintained at about 15 °C or 288 K) and hence the telescope itself radiates strongly in the infrared bands.</p>
+
+<p>The JWST will operate near the Earth–Sun L2 (Lagrange) point, approximately 1,500,000 km (930,000 mi) beyond Earth's orbit. By way of comparison, Hubble orbits 550 kilometres (340 mi) above Earth's surface, and the Moon is roughly 400,000 kilometres (250,000 mi) from Earth. This distance makes post-launch repair or upgrade of the JWST hardware virtually impossible. Objects near this point can orbit the Sun in synchrony with the Earth, allowing the telescope to remain at a roughly constant distance and use a single sunshield to block heat and light from the Sun and Earth. This will keep the temperature of the spacecraft below 50 K (−220 °C; −370 °F), necessary for infrared observations.The prime contractor is Northrop Grumman.</p>
+
+          
+          <span class="caption text-muted">Sources:Wikipedia.</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

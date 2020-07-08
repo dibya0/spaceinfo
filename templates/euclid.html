@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='euclid.jpg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">Euclid</h2>
+
+          <p>  Euclid is a visible to near-infrared space telescope currently under development by the European Space Agency (ESA) and the Euclid Consortium. The objective of the Euclid mission is to better understand dark energy and dark matter by accurately measuring the acceleration of the universe. To achieve this, the Korsch-type telescope will measure the shapes of galaxies at varying distances from Earth and investigate the relationship between distance and redshift. Dark energy is generally accepted as contributing to the increased acceleration of the expanding universe, so understanding this relationship will help to refine how physicists and astrophysicists understand it. Euclid's mission advances and complements ESA's Planck telescope. The mission is named after the ancient Greek mathematician Euclid of Alexandria.</p>
+
+<p>Euclid is a medium-class ("M-class") mission and is part of the Cosmic Vision campaign of ESA's Science Programme. This class of missions have an ESA budget cap at around €500 million. Euclid was chosen in October 2011 together with Solar Orbiter, out of several competing missions. The launch date is planned for mid-2022.</p>
+          
+          <h3 class="section-heading">Objective</h3>
+          
+          <p>Euclid will probe the history of the expansion of the universe and the formation of cosmic structures by measuring the redshift of galaxies out to a value of 2, which is equivalent to seeing back 10 billion years in the past. The link between galactic shapes and their corresponding redshift will help to show how dark energy contributes to the increased acceleration of the universe. The methods employed exploit the phenomenon of gravitational lensing, measurement of baryon acoustic oscillations, and measurement of galactic distances by spectroscopy.</p>
+
+<p>Gravitational lensing (or gravitational shear) is a consequence of the deflection of light rays caused by the presence of matter that locally modifies the curvature of space-time: light emitted by galaxies, and therefore observed images, are distorted as they pass close to matter lying along the line of sight. This matter is composed partly of visible galaxies but it is mostly dark matter. By measuring this shear, the amount of dark matter can be inferred, furthering the understanding of how it is distributed in the universe.</p>
+
+<p>Spectroscopic measurements will permit measuring the redshifts of galaxies and determining their distances using Hubble's Law. In this way, one can reconstruct the three-dimensional distribution of galaxies in the universe.</p>
+
+<p>From these data, it is possible to simultaneously measure the statistical properties concerning the distribution of dark matter and galaxies, and measure how these properties change as the spacecraft looks further back in time. Highly precise images are required to provide sufficiently accurate measurements. Any distortion inherent in the sensors must be accounted for and calibrated out, otherwise, the resultant data would be of limited use. </p>
+
+          <span class="caption text-muted">Sources:Wikipedia.</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

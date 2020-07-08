@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='very.jpg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">Very large Telescope</h2>
+
+          <p>The Very Large Telescope (VLT) is a telescope facility operated by the European Southern Observatory on Cerro Paranal in the Atacama Desert of northern Chile. The VLT consists of four individual telescopes, each with a primary mirror 8.2 m across, which are generally used separately but can be used together to achieve very high angular resolution.The four separate optical telescopes are known as Antu, Kueyen, Melipal, and Yepun, which are all words for astronomical objects in the Mapuche language. The telescopes form an array which is complemented by four movable Auxiliary Telescopes (ATs) of 1.8 m aperture.</p>
+
+<p>The VLT operates at visible and infrared wavelengths. Each individual telescope can detect objects roughly four billion times fainter than can be detected with the naked eye, and when all the telescopes are combined, the facility can achieve an angular resolution of about 0.002 arc-second. In single telescope mode of operation angular resolution is about 0.05 arc-second.</p>
+
+<p>The VLT is the most productive ground-based facility for astronomy, with only the Hubble Space Telescope generating more scientific papers among facilities operating at visible wavelengths. Among the pioneering observations carried out using the VLT are the first direct image of an exoplanet, the tracking of individual stars moving around the supermassive black hole at the centre of the Milky Way, and observations of the afterglow of the furthest known gamma-ray burst. </p>
+
+<p>The VLT consists of an arrangement of four large (8.2 metre diameter) telescopes (called Unit Telescopes or UTs) with optical elements that can combine them into an astronomical interferometer (VLTI), which is used to resolve small objects. The interferometer also includes a set of four 1.8 meter diameter movable telescopes dedicated to interferometric observations. The first of the UTs started operating in May 1998 and was offered to the astronomical community on 1 April 1999. The other telescopes became operational in 1999 and 2000, enabling multi-telescope VLT capability. Four 1.8-metre Auxiliary Telescopes (ATs) have been added to the VLTI to make it available when the UTs are being used for other projects. These ATs were installed and became operational between 2004 and 2007</p>
+
+          
+          <span class="caption text-muted">Sources:Wikipedia</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='binary1.jpg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">Binary Star</h2>
+
+          <p> A binary star is a star system consisting of two stars orbiting around their common barycenter. Systems of two or more stars are called multiple star systems. These systems, especially when more distant, often appear to the unaided eye as a single point of light, and are then revealed as multiple by other means.</p>
+
+<p>The term double star is often used synonymously with binary star; however, double star can also mean optical double star. Optical doubles are so called because the two stars appear close together in the sky as seen from the Earth; they are almost on the same line of sight. Nevertheless, their "doubleness" depends only on this optical effect; the stars themselves are distant from one another and share no physical connection. A double star can be revealed as optical by means of differences in their parallax measurements, proper motions, or radial velocities. Most known double stars have not been studied adequately to determine whether they are optical doubles or doubles physically bound through gravitation into a multiple star system.</p>
+
+<p>Binary star systems are very important in astrophysics because calculations of their orbits allow the masses of their component stars to be directly determined, which in turn allows other stellar parameters, such as radius and density, to be indirectly estimated. This also determines an empirical mass-luminosity relationship (MLR) from which the masses of single stars can be estimated.</p>
+
+<p>Binary stars are often resolved as separate stars, in which case they are called visual binaries. Many visual binaries have long orbital periods of several centuries or millennia and therefore have orbits which are uncertain or poorly known. They may also be detected by indirect techniques, such as spectroscopy (spectroscopic binaries) or astrometry (astrometric binaries). If a binary star happens to orbit in a plane along our line of sight, its components will eclipse and transit each other; these pairs are called eclipsing binaries, or, together with other binaries that change brightness as they orbit, photometric binaries.</p>
+
+<p>If components in binary star systems are close enough they can gravitationally distort their mutual outer stellar atmospheres. In some cases, these close binary systems can exchange mass, which may bring their evolution to stages that single stars cannot attain. Examples of binaries are Sirius, and Cygnus X-1 (Cygnus X-1 being a well-known black hole). Binary stars are also common as the nuclei of many planetary nebulae, and are the progenitors of both novae and type Ia supernovae.
+ </p>
+
+          
+          
+          <span class="caption text-muted">Sources:Wikipedia</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

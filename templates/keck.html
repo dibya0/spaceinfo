@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='keck1.jpeg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">W. M. Keck Observatory</h2>
+
+          <p>The W. M. Keck Observatory is a two-telescope astronomical observatory at an elevation of 4,145 meters (13,600 ft) near the summit of Mauna Kea in the U.S. state of Hawaii. Both telescopes have 10 m (33 ft) aperture primary mirrors, and when completed in 1993 (Keck 1) and 1996 (Keck 2) were the largest astronomical telescopes in the world. They are currently the 3rd and 4th largest telescopes. </p>
+<p>With a concept first proposed in 1977, telescope designers at the University of California, Berkeley (Terry Mast) and Lawrence Berkeley Laboratory (Jerry Nelson) had been developing the technology necessary to build a large, ground-based telescope.[1] With a design in hand, a search for the funding began. In 1985, Howard B. Keck of the W. M. Keck Foundation gave $70 million to fund the construction of the Keck I telescope. Construction of Keck I began in September 1985, with first light occurring on 24 November 1990 using only nine of the eventual 36 segments. With construction of the first telescope well advanced, further donations allowed the construction of a second telescope starting in 1991. The Keck I telescope began science observations in May 1993, while first light for Keck II occurred on October 23, 1996.</p>
+
+
+<p>The key advance that allowed the construction of the Keck Observatory's large telescopes was the use of active optics to operate smaller mirror segments as a single, contiguous mirror. A mirror the size of Keck's cast of a single piece of glass could not be made rigid enough to hold its shape precisely; it would sag microscopically under its own weight as it was turned to different positions, causing aberrations in the optical path. In the case of the Keck Observatory telescopes, each of the primary mirrors is composed of 36 hexagonal segments that work together as a single unit. Each segment is 1.8 meters wide, 7.5 centimeters thick, and weighs half a ton. The mirrors were made from Zerodur glass-ceramic by the German company Schott AG. On the telescope, each segment is kept stable by a system of active optics, which uses extremely rigid support structures in combination with three actuators under each segment. During observation, the computer-controlled system of sensors and actuators dynamically adjusts the position of each segment, relative to its neighbors, to keep the surface shape accuracy of four nanometers. This twice-per-second adjustment counters the effect of gravity as the telescope moves, in addition to other environmental and structural effects that can affect the mirror shape.</p>
+
+<p>Each Keck Observatory telescope sits on an altazimuth mount. Most current 8–10 m class telescopes use altazimuth designs due to the reduced structural requirements compared to older equatorial designs. This mounting style provides the greatest strength and stiffness for the least amount of steel, which, for Keck Observatory, totals about 270 tons per telescope. The total weight of each telescope is more than 300 tons. Two of the proposed designs for the next generation 30 and 40 m telescopes use the same basic technology pioneered at Keck Observatory, a hexagonal mirror array coupled with an altazimuth mounting.</p>
+
+<p>The primary mirrors of each of the two telescopes are 10 meters (32.8 ft or 394 in) in diameter, slightly smaller than the Gran Telescopio Canarias. However, all of the light collected by the Keck Observatory primary mirrors (75.76 m2) is sent to the secondary mirror and the instruments, compared to GTC's primary mirror, which has an effective light-collection area of 73.4 m2, or 2.36 m2 (25.4 sq ft) less than each of the Keck Observatory primary mirrors. Because of this fundamental difference in design, Keck Observatory's telescopes arguably remain the largest steerable, optical/infrared telescopes on Earth.</p>
+
+<p>The telescopes are equipped with a suite of instruments, both cameras and spectrometers, that allow observations across much of the visible and near infrared spectrum. </p>
+          
+          <span class="caption text-muted">Sources:Wikipedia</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

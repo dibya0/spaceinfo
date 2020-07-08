@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='laser.jpg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">Laser Interferometer Space Antenna</h2>
+
+          <p>The Laser Interferometer Space Antenna (LISA) is a mission led by the European Space Agency to detect and accurately measure gravitational waves—tiny ripples in the fabric of space-time—from astronomical sources. LISA would be the first dedicated space-based gravitational wave detector. It aims to measure gravitational waves directly by using laser interferometry. The LISA concept has a constellation of three spacecraft arranged in an equilateral triangle with sides 2.5 million km long, flying along an Earth-like heliocentric orbit. The distance between the satellites is precisely monitored to detect a passing gravitational wave.</p>
+
+<p>The LISA project started out as a joint effort between the United States space agency NASA and the European Space Agency ESA. However, in 2011, NASA announced that it would be unable to continue its LISA partnership with the European Space Agency due to funding limitations. The project is a recognized CERN experiment (RE8).A scaled down design initially known as the New Gravitational-wave Observatory (NGO) was proposed for ESA's Cosmic Vision L1 mission selection.In 2013, ESA selected 'The Gravitational Universe' as the theme for its L3 mission in the early 2030s. whereby it committed to launch a space based gravitational wave observatory.</p>
+
+<p>In January 2017, LISA was proposed as the candidate mission.On June 20, 2017 the suggested mission received its clearance goal for the 2030s, and was approved as one of the main research missions of ESA.</p>
+
+<p>The LISA mission is designed for direct observation of gravitational waves, which are distortions of space-time travelling at the speed of light. Passing gravitational waves alternately squeeze and stretch objects by a tiny amount. Gravitational waves are caused by energetic events in the universe and, unlike any other radiation, can pass unhindered by intervening mass. Launching LISA will add a new sense to scientists' perception of the universe and enable them to study phenomena that are invisible in normal light.</p>
+
+<p>Potential sources for signals are merging massive black holes at the centre of galaxies,[15] massive black holes[16] orbited by small compact objects, known as extreme mass ratio inspirals, binaries of compact stars in our Galaxy, and possibly other sources of cosmological origin, such as the very early phase of the Big Bang,[18] and speculative astrophysical objects like cosmic strings and domain boundaries</p>
+
+          <h3 class="section-heading">Mission</h3>
+
+          <p>The LISA mission's primary objective is to detect and measure gravitational waves produced by compact binary systems and mergers of supermassive black holes. LISA will observe gravitational waves by measuring differential changes in the length of its arms, as sensed by laser interferometry.Each of the three LISA spacecraft contains two telescopes, two lasers and two test masses (each a 46 mm, roughly 2 kg, gold-coated cube of gold/platinum), arranged in two optical assemblies pointed at the other two spacecraft. This forms Michelson-like interferometers, each centred on one of the spacecraft, with the test masses defining the ends of the arms. The entire arrangement, which is ten times larger than the orbit of the Moon, will be placed in solar orbit at the same distance from the Sun as the Earth, but trailing the Earth by 20 degrees, and with the orbital planes of the three spacecraft inclined relative to the ecliptic by about 0.33 degree, which results in the plane of the triangular spacecraft formation being tilted 60 degrees from the plane of the ecliptic. The mean linear distance between the formation and the Earth will be 50 million kilometres.</p>
+
+<p>To eliminate non-gravitational forces such as light pressure and solar wind on the test masses, each spacecraft is constructed as a zero-drag satellite. The test mass floats free inside, effectively in free-fall, whilst the spacecraft around it absorbs all these local non-gravitational forces. Then, using capacitive sensing to determine the spacecraft's position relative to the mass, very precise thrusters adjust the spacecraft so it follows, keeping itself centered around the mass.</p>
+
+          <span class="caption text-muted">Sources:Wikipedia.</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

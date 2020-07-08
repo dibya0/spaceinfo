@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='yearly.png') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">Meteor Shower</h2>
+
+          <p>Those who constantly scan the sky for meteors now feel that the Geminids in December are the best of the annual showers, surpassing even the August Perseids. The Geminids are scheduled to reach their maximum late on the night of Dec. 14 into the morning hours of Dec. 15, when 60 to 120 slow, graceful meteors per hour may be seen under ideal dark-sky conditions.</p> 
+
+<p>The moon is new that day and will have no adverse effects on visibility (unlike in 2019, when a nearly full moon squelched visibility of all but the brightest meteors). Viewers should start watching after 10 p.m. local time;  a fair number of meteors should be visible thereafter, but the very best time to watch will be around 2 a.m. local time. Expect small, faint meteors to dominate on the nights prior to the peak; during and after the peak, however, bright meteors and fireballs should appear. </p>
+
+          
+          <a href="#">
+            <img class="img-fluid" src="{{ url_for('static',filename='dec1.jpg') }}" alt="">
+          </a>
+          <span class="caption text-muted">Image credit: Matt Skinner/Lights Out Photography.</span>
+
+          <h2 class="section-heading">Total Solar Eclipse</h2>
+
+          <p> The final eclipse of 2020 will be visible only from the lower two-thirds of South America and a narrow slice of southwestern Africa. North America will not see any part of it. 
+
+The narrow path of the total eclipse starts over the South Atlantic Ocean, takes about 25 minutes to sweep southeast through the Patagonia section of Chile and Argentina, then continues out over the South Atlantic Ocean, coming to an end at local sunset about 230 miles (370 km) southwest of the coast of Namibia.</p>
+
+<p>The regions of Chile and Argentina traversed by the total eclipse are, unfortunately, rather sparsely populated. The point of greatest eclipse is 18 miles (29 km) northwest of Sierra Colorada, a village and municipality in Río Negro Province in Argentina (pop. ~1,300). Here, the path width is 55 miles (90 km) and the total eclipse will last 2 minutes 9.6 seconds.</p>
+
+          
+          <a href="#">
+            <img class="img-fluid" src="{{ url_for('static',filename='dec2.jpg') }}" alt="">
+          </a>
+          <span class="caption text-muted">Image credit: ESO/P. Horálek/Solar Wind Sherpas project</span>
+
+          <h2 class="section-heading">Jupiter and Saturn Conjunction</h2>
+
+          <p>Jupiter and Saturn are in conjunction with each other on an average of once about every 20 years. When they come closest to each other they are usually separated by about a degree or two. But on Dec. 21, Jupiter and Saturn will provide a rare opportunity to both in the same view of a high-powered telescope! In fact, this will be the "tightest" conjunction of these two worlds since 1623; they will be separated by just one-fifth of the apparent diameter of the full moon! </p> 
+
+
+          
+          <a href="#">
+            <img class="img-fluid" src="{{ url_for('static',filename='dec3.jpg') }}" alt="">
+          </a>
+          <span class="caption text-muted">Image credit: SkySafari App.</span>
+        
+
+          <span class="caption text-muted">Sources:space.com</span>
+          
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

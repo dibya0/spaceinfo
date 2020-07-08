@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='tess1.jpeg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <h2 class="section-heading">TESS</h2>
+
+          <p>The Transiting Exoplanet Survey Satellite (TESS) is a space telescope for NASA's Explorers program, designed to search for exoplanets using the transit method in an area 400 times larger than that covered by the Kepler mission. It was launched on April 18, 2018 atop a Falcon 9 rocket and was placed into a highly elliptical 13.7-day orbit around the Earth. The first light image from TESS was taken on August 7, 2018, and released publicly on September 17, 2018.</p>
+
+<p>Over the course of the two-year primary mission, TESS is expected to ultimately detect about 1250 transiting exoplanets orbiting the targeted stars, and an additional 13,000 transiting planets orbiting additional stars in the fields that TESS observed.As of 10 May 2020, TESS has identified 1835 candidate exoplanets, of which 46 have been confirmed so far. After the end of the primary mission around July 4, 2020, data from the prime mission will continue to be searched for planets, while the extended mission will continue to acquire additional data.</p>
+
+<p>The primary mission objective for TESS is to survey the brightest stars near the Earth for transiting exoplanets over a two-year period. The TESS satellite uses an array of wide-field cameras to perform a survey of 85% of the sky. With TESS, it is possible to study the mass, size, density and orbit of a large cohort of small planets, including a sample of rocky planets in the habitable zones of their host stars. TESS will provide prime targets for further characterization by the James Webb Space Telescope, as well as other large ground-based and space-based telescopes of the future. While previous sky surveys with ground-based telescopes have mainly detected giant exoplanets and the Kepler space telescope has mostly found planets around distant stars that are too faint for characterisation, TESS will find many small planets around the nearest stars in the sky. TESS records the nearest and brightest main sequence stars hosting transiting exoplanets, which are the most favorable targets for detailed investigations.</p>
+
+<p>TESS uses a novel highly-elliptical orbit around the Earth with an apogee approximately at the distance of the Moon and a perigee of 108,000 km. TESS orbits Earth twice during the time the Moon orbits once, a 2:1 resonance with the Moon. The orbit is expected to remain stable for a minimum of ten years.</p>
+
+<p>Led by the Massachusetts Institute of Technology with seed funding from Google,[16] on April 5, 2013, it was announced that TESS, along with the Neutron Star Interior Composition Explorer (NICER), had been selected by NASA for launch.</p>
+          
+          <h3 class="section-heading">Objective</h3>
+
+          <p>TESS's two-year all-sky survey will focus on nearby G-, K-, and M-type stars with apparent magnitudes brighter than magnitude 12. Approximately 200,000 stars will be studied, including the 1,000 closest red dwarfs across the whole sky,an area 400 times larger than that covered by the Kepler mission. TESS is expected to discover more than 20,000 transiting exoplanets, including 500 to 1000 Earth-sized planets and super-Earths.[32] Of those discoveries, an estimated 20 could be super-Earths located in the habitable zone around a star. The stated goal of the mission is to determine the masses of at least 50 Earth-sized planets (at most 4 times earth radii). Most detected exoplanets are expected to be between 30 and 300 light-years away.</p>
+
+<p>The survey is broken up into 26 observation sectors, each sector being 24° × 96°, with an overlap of sectors at the ecliptic poles to allow additional sensitivity toward smaller and longer-period exoplanets in that region of the celestial sphere. The spacecraft will spend two 13.7-day orbits observing each sector, mapping the southern hemisphere of sky in its first year of operation and the northern hemisphere in its second year. The cameras actually take images every 2 seconds, but all the raw images would represent much more data volume than can be stored or downlinked. To deal with this, cutouts around 15,000 selected stars (per orbit) will be coadded over a 2-minute period and saved on board for downlink, while full-frame images will also be coadded over a 30-minute period and saved for downlink. The actual data downlinks will occur every 13.7 days near perigee. This means that during the 2 years, TESS will continuously survey 85% of the sky for 27 days, with certain parts being surveyed across multiple runs. The survey methodology was designed such that the area that will be surveyed, essentially continuously, over an entire year (351 observation days) and makes up about 5% of the entire sky, will encompass the regions of sky (near the ecliptic poles) which will be observable at any time of year with the JWST.</p>
+
+          
+          <span class="caption text-muted">Sources:Wikipedia.</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>

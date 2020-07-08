@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SpaceInfos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href=" {{url_for('static',filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href=" {{ url_for('static',filename='all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href=" {{ url_for('static',filename='clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url_for('index') }}">SpaceInfos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('yearly') }}">Happening This Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('telescope') }}">Telescopes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('spacewiki') }}">Astronomy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static',filename='black2.jpg') }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>          </h1>
+            <span class="subheading"><br> </br></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='asteroid1.jpg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('asteroid') }}">
+             <h2 class="card-title">Asteroid</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='binary1.jpg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('binary') }}">
+             <h2 class="card-title">Binary Star</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='black.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('black') }}">
+             <h2 class="card-title">Black Hole</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='comet1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('comet') }}">
+             <h2 class="card-title">Comet</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='dwarf1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('dwarf') }}">
+             <h2 class="card-title">Dwarf Star</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='earth1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('earth') }}">
+             <h2 class="card-title">Earth</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='eclipse1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('eclipse') }}">
+             <h2 class="card-title">Eclipse</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='galaxy2.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('galaxy1') }}">
+             <h2 class="card-title">Galaxy</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='jupiter1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('jupiter') }}">
+             <h2 class="card-title"> Jupiter</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='mars1.png') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('mars') }}">
+             <h2 class="card-title">Mars</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='mercury1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('mercury') }}">
+             <h2 class="card-title">Mercury</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='meteriote1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('meteriote') }}">
+             <h2 class="card-title">Meteriote</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='galaxy4.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('milky') }}">
+             <h2 class="card-title">Milkyway Galaxy</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='moon1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('moon') }}">
+             <h2 class="card-title">Moon</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='nebulae1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('nebulae') }}">
+             <h2 class="card-title">Nebulae</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='neptune1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('neptune') }}">
+             <h2 class="card-title">Neptune</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='neutron1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('neutron') }}">
+             <h2 class="{{ url_for('neutron') }}card-title">Neutron Star</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='pulsar1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('pulsar') }}">
+             <h2 class="card-title">Pulsar</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='quasar1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('quasar') }}">
+             <h2 class="card-title">Quasar</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='saturn1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('saturn') }}">
+             <h2 class="card-title">Saturn</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='star.jpg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('star') }}">
+             <h2 class="card-title">Star</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='star2.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('starcon') }}">
+             <h2 class="card-title">Star Constellation</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='supernova1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('supernova') }}">
+             <h2 class="card-title">Supernova</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='universe1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('universe') }}">
+             <h2 class="card-title">Universe</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='uranus.jpg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('uranus') }}">
+             <h2 class="card-title">Uranus</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-60">
+          <img class="card-img-top" src=" {{ url_for('static',filename='venus1.jpeg') }} " alt="">
+          <div class="card-body">
+            <a href="{{ url_for('venus') }}">
+             <h2 class="card-title">Venus</h2>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+  <hr>
+   <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <p class="copyright text-muted">Copyright &copy; SpaceInfos 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+   <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static',filename='clean-blog.min.js') }}"></script>
+
+
+</body>
+
+</html>
